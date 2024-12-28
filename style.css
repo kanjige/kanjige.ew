@@ -1,0 +1,203 @@
+    body {
+    
+    background-color: #f0f0f0;
+    margin: 0;
+    color: #0a0a0a;
+    font-family: Afacad Flux;
+    
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+
+
+
+    .page-block {
+        /*position: absolute;*/ 
+        top: 0; 
+        left: 0; 
+        height: 100%; 
+        width: 100%;
+
+    }
+
+    .page-block {
+        position: relative;
+        z-index: 1;
+    }
+
+
+
+    
+
+
+/* Centerpiece Text */ 
+    .kanjige {
+        font-family: Roboto Mono;
+        font-size: 125%;
+        display: flex;
+        justify-content: center;
+        height: 85vh;
+        align-items: center;
+        margin: 0;
+        letter-spacing: .15em; /* Adjust as needed */
+        flex-direction: column;
+        position: relative;
+    }
+
+    .kanjige h1 {
+        opacity: 0;
+        animation: fadeIn 1s forwards;
+        position: absolute;
+    }
+
+    .kanjige h6 {
+        overflow: hidden; 
+        border-right: .09em solid #0f0f0f;
+        white-space: nowrap; 
+        margin: 0 auto; 
+        opacity: 0; 
+        margin-top: 4ch;
+
+        animation: typing 1.5s steps(9, end) 2s forwards, /* 0.9s duration with 2s delay */
+                   blink 0.75s steps(2, end) 3 forwards; 
+        animation-delay: 2s;
+        
+    }
+
+    @keyframes typing {
+        from { width: 0; } /* Start with no text and visible */
+        to { width: 12.5ch; opacity: 1; } /* End with full text and visible */
+      }
+  
+      /* The typewriter cursor effect */
+      @keyframes blink {
+        from, to { border-color: transparent; }
+        50% { border-color: #0f0f0f; }
+      }
+/*--------------------*/
+
+/* Scroll Arrow */ 
+.arrow {
+    display: block;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    opacity: 0;
+    
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 0.75s;
+}
+/*--------------------*/
+
+
+/* Sidebar (Social Links) */ 
+    .links {
+        z-index: 10;
+        position: fixed;
+        float: right;
+        top: 35vh;
+        right: 1.5vw;
+        opacity: 0;
+
+        animation: fadeIn 1.5s forwards;
+        animation-delay: 1.5s;
+    }
+
+    .links section {
+        padding: 0.3ch;
+    }
+
+    .links img {
+        width: 3ch;
+        height: auto;
+        display: block;
+    }
+
+    .links a {
+        display: inline-block;
+        position: relative;
+        height: relative;
+        padding: 0;
+        border: 0;
+        margin: 0;
+        line-height: 0;
+        padding-left: 0.35em;
+        border-left: 0.15em solid transparent;
+        
+    }
+
+    .links a::after {
+        content: '';
+        position: absolute; /* Position relative to the parent <a> */
+        bottom: 0; /* Start at the top of the <a> tag */
+        left: 0; /* Align to the right edge */
+        width: 2px; /* The bar's width */
+        height: 0; /* Initial height is 0 */
+        background-color: #0a0a0a; /* Bar color */
+        transition: height 0.2s ease-in-out; /* Smooth height animation */
+    }
+    
+    .links a:hover::after {
+        height: 100%; /* Expand the bar to the full height of the <a> */
+        top: 0;
+        bottom: 0;
+    }
+/*--------------------*/
+
+/* Navigation Bar */
+    .navbar {
+        z-index: 3;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        top: 5vh;
+        opacity: 0;
+
+        animation: fadeIn 1.5s forwards;
+        animation-delay: 1.125s;
+    }
+    
+
+    .navbar section, .navbar a:visited, .navbar a:link {
+        white-space: nowrap; 
+        float: left;
+        margin: 1.15vw;
+        text-align: center;
+
+        color: #0a0a0a;
+        font-weight: 575;
+        text-decoration: none;
+        text-transform: uppercase;
+        position: relative;
+
+        border-bottom: 0.15em solid transparent;
+    }
+
+    .navbar a::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px; /* Adjust the border thickness as needed */
+        background-color: #0a0a0a;
+        transform-origin: left;
+        transition: width 0.25s ease-in-out;
+    }
+    
+    .navbar a:hover::after {
+        width: 100%; /* Grows the border to the full width */
+        left: 0;
+        right: 0;
+    }
+/*--------------------*/
+    
