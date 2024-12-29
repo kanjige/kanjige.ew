@@ -41,15 +41,27 @@
         
         <!-- Arrow -->
         <div class="arrow">
-            <svg width="250" height="50">
-                <polyline points="100,15 125,25 150,15" style="fill:none; stroke:#0a0a0a; stroke-width: 2.5;"></polyline>
+            <svg width="100" height="50">
+                <polyline points="50,25 50,25 50,25" style="fill:none; stroke:#0a0a0a; stroke-width: 1;">
+                <animate 
+                    attributeName="points" 
+                    values="25,15 50,25 75,15;
+                            50,25 50,25 50,25;
+                            50,25 50,25 50,25" 
+                    keyTimes="0;0.4;1" 
+                    keySplines="0.5 0 1 1; 0 0 0 0" 
+                    calcMode="spline" 
+                    dur="1.9s" 
+                    repeatCount="indefinite" 
+                    fill="freeze" />
+                </polyline>
             </svg>
         </div>
 
     </div>
     <div style="height: 10vh;"></div>
 
-    <article style="margin: auto; width: 70%; text-align: center;">
+    <article id="description">
         <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Primis nec curabitur pellentesque praesent cursus porttitor arcu! Justo euismod pellentesque per vivamus varius. Proin laoreet hendrerit, dui at gravida fusce. Mollis lacinia habitant bibendum, risus a duis. Leo viverra pretium dictum augue taciti turpis, egestas consectetur. In feugiat tortor ligula auctor aliquet ullamcorper lobortis ad. Dui curabitur efficitur sit eu integer hac. Fermentum senectus habitant fermentum duis tellus eleifend libero. Feugiat aliquam scelerisque fringilla mollis platea dolor tempus duis.
 
             Augue nunc inceptos magna vel quam eget ante montes. Torquent aliquam augue eu rutrum porta sollicitudin at. Rhoncus in sed posuere a class. Eros condimentum orci interdum neque interdum. Lectus nunc porttitor at duis facilisis ridiculus. Vehicula platea ultrices libero eleifend nisi lectus quisque. Nulla et ante sem; fringilla sociosqu hendrerit facilisis tincidunt vehicula. Litora nostra taciti malesuada elit viverra faucibus ex. Sem nisi ullamcorper potenti diam, posuere tortor senectus pellentesque!
