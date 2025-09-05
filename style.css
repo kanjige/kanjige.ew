@@ -4,7 +4,12 @@
     margin: 0;
     color: #0a0a0a;
     font-family: Afacad Flux;
-    
+    scroll-snap-type: y mandatory;
+    }
+
+    html { 
+        height: 100%; 
+        scroll-snap-type: y mandatory; 
     }
 
     @keyframes fadeIn {
@@ -13,7 +18,10 @@
         }
     }
 
-
+    #sector {
+        height: 100vh;
+        scroll-snap-align: end;
+    }
 
     .page-block {
         /*position: absolute;*/ 
@@ -30,17 +38,12 @@
     }
 
 
-    #description{
-        margin:auto;
-        width:70%;
-        text-align: center;
-    }    
-
+    
 
 /* Centerpiece Text */ 
     .kanjige {
         font-family: Roboto Mono;
-        font-size: 125%;
+        font-size: 175%;
         display: flex;
         justify-content: center;
         height: 85vh;
@@ -121,6 +124,7 @@
         display: block;
     }
 
+
     .links a {
         display: inline-block;
         position: relative;
@@ -162,11 +166,15 @@
         justify-content: center;
         text-align: center;
         align-items: center;
-        top: 5vh;
+        top: 10vh;
         opacity: 0;
 
         animation: fadeIn 1.5s forwards;
         animation-delay: 1s;
+    }
+
+    .navbar a{
+        font-size: 125%;
     }
     
 
