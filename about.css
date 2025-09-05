@@ -1,0 +1,41 @@
+
+
+    .center {
+            font-family: Roboto Mono;
+            font-size: 175%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 60vh;
+            margin: 0;
+            letter-spacing: .15em;
+            position: relative;
+        }
+
+    .center h1 {
+        position: absolute;
+    }
+
+
+    .center h6 {
+            overflow: hidden; 
+            white-space: nowrap; 
+            margin: 0 auto; 
+            margin-top: 10ch;
+            text-align: center;
+            font-size: 100%;
+            
+        }
+
+    
+
+    #description{
+        margin: auto;
+        width: 70%;
+        text-align: center;
+        font-size: 60%;
+        font-weight: 575;
+        font-family: Afacad Flux;
+        letter-spacing: initial;
+    }    
