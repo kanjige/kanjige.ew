@@ -18,7 +18,7 @@
         }
     }
 
-    #sector {
+    #sector-one {
         height: 100vh;
         scroll-snap-align: end;
     }
@@ -56,8 +56,9 @@
 
     .kanjige h1 {
         opacity: 0;
-        animation: fadeIn 1s forwards;
+        animation: fadeIn 0s forwards;
         position: absolute;
+
     }
 
     .kanjige h6 {
@@ -174,7 +175,7 @@
     }
 
     .navbar a{
-        font-size: 125%;
+        font-size: 115%;
     }
     
 
