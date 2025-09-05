@@ -39,3 +39,12 @@
         font-family: Afacad Flux;
         letter-spacing: initial;
     }    
+
+    #sector-two {
+        height: 100vh;
+        scroll-snap-align: end;
+        background-color: #c26161;
+        color: #f0f0f0;
+    }
+
+   
