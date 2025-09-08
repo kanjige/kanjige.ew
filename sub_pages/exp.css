@@ -1,0 +1,75 @@
+body {
+    
+    background-color: #f0f0f0;
+    margin: 0;
+    color: #0a0a0a;
+    font-family: Afacad Flux;
+    width: "70%";
+    display:flex;
+    }
+
+.filler-block {
+    width: 35%;
+}
+
+.sidebar {
+      width: 20%;
+      color: #f0f0f0;
+      height: 80vh;
+      padding: 10% 0;
+      box-sizing: border-box;
+      align-items: center;
+      position: absolute;
+      top: 10%;
+      left: 10%;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: stretch;
+
+      border-radius: 12px;
+  
+}
+    
+
+    .sidebar button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background: none;
+      border: none;
+      color: black;
+      text-align: left;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: Afacad Flux;
+    }
+
+    .sidebar button:hover, .sidebar button.active {
+      background: #c26161;
+      color: #f0f0f0;
+    }
+
+    /* Content styles */
+    .content {
+      
+      flex: 1;
+      padding: 10% 12% 0 5%;
+    }
+
+    .content-section {
+      display: none;
+    }
+
+    .content-section.active {
+      display: block;
+    }
+
+.job-header {
+  display: flex;
+  justify-content: space-between; /* pushes company left, date right */
+  align-items: center; /* keeps them aligned vertically */
+  margin: 0; /* optional, to control spacing */
+}
