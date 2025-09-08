@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kanjige</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Qwitcher+Grypen:wght@400;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="icons/icon.png">
+    <link rel="stylesheet" href="exp.css">
+</head>
+
+
+<body>
+    <!-- Sidebar -->
+    <div class="filler-block"></div>
+    <div class="sidebar">
+        <button onclick="show_content('ops')" class="active">Ontario Public Service</button>
+        <button onclick="show_content('cibc')" class="active">CIBC Capital Markets</button>
+        <button onclick="show_content('stellantis')" class="active">Stellantis</button>
+        <button onclick="show_content('yrdsb')" class="active">York Region District School Board</button>
+        <button onclick="show_content('ohsea')" class="active">Ontrario High School Esports Association</button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div id="ops" class="content-section active">
+            <h1>ETL Developer</h1>
+            <h4 class="job-header">
+                <span class="company">Ontario Public Service</span>
+                <span class="date">Sep 2025 - Present</span>
+            </h4>
+            <ul>
+                <li>Analyzed ETL pipeline issues in IBM DataStage that produced unexpected outputs, identified root causes, and implemented solutions and to ensure accurate data processing and reporting.</li>
+                <li>Fulfilled ad-hoc data requests from clients by extracting, validating, and delivering datasets using SQL scripts through DbVisualizer, ensuring accuracy and timely support.</li>
+                <li>Documented ETL workflows, report logic, and business rules to improve knowledge transfer and maintainability.</li>
+            </ul>
+        </div>
+
+
+        <div id="cibc" class="content-section">
+            <h1>Product Developer</h1>
+            <h4 class="job-header">
+                <span class="company">CIBC Capital Markets</span>
+                <span class="date">May 2024 - Aug 2024,  Jan 2025 - Apr 2025</span>
+            </h4>
+            <ul>
+                <li>Led the development of 10+ internal tools and automations to process data analytics and generate financial reports for 60+ traders using Python, VBA and Batch scripts, cutting production time by over 75%.</li>
+                <li>Developed full stack applications using Python, Flask, Pandas, and SQL to efficiently extract key financial metrics and create custom views, cutting time for custom requests and aggregations by more than 50%.</li>
+                <li>Implemented data warehouse Databricks and Microsoft SQL Server database to streamline and optimize data workflows, reducing ETL processing time and enhancing data integrity and reliability across pipelines.</li>
+            </ul>
+        </div>
+
+
+        <div id="stellantis" class="content-section">
+            <h1>Production Worker</h1>
+            <h4 class="job-header">
+                <span class="company">Stellantis</span>
+                <span class="date">Jun 2023 - Aug 2023</span>
+            </h4>
+            <ul>
+                <li>Worked with a diverse team in a fast-paced environment, ensuring a high-degree of detail orientation to  meet and exceed quality control and compliance standards.</li>
+                <li>Identified potential areas to streamline operational processes and enable production above target levels.</li>
+            </ul>
+        </div>
+
+
+        <div id="yrdsb" class="content-section">
+            <h1>Teaching Assistant</h1>
+            <h4 class="job-header">
+                <span class="company">York Region District School Board</span>
+                <span class="date">Jul 2022 - Aug 2022</span>
+            </h4>
+            <ul>
+                <li>Coordinated with 5+ experienced staff daily to plan and execute separate teaching styles, identifying and accommodating each individual student’s strengths and weaknesses and offering suggestions to teachers.</li>
+                <li>Enabled dozens of students to improve their proficiency in various high school level course material, developing skills and overcoming the risk of failure in various STEM and non-STEM related subjects.</li>
+
+            </ul>
+        </div>
+
+
+
+        <div id="ohsea" class="content-section">
+            <h1>Executive/Graphic Designer</h1>
+            <h4 class="job-header">
+                <span class="company">Ontario High School Esports Association</span>
+                <span class="date">Aug 2021 - May 2022</span>
+            </h4>
+            <ul>
+                <li>Collaborated with team members to coordinate and facilitate events for 200+ participants.</li>
+                <li>Applied knowledge of design fundamentals to develop social media posts and website templates using Canva and FireAlpaca.</li>
+
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function show_content(section_id) {
+        // Hide all sections
+        document.querySelectorAll('.content-section').forEach(sec => sec.classList.remove('active'));
+        // Show selected section
+        document.getElementById(section_id).classList.add('active');
+
+        // Update active button
+        document.querySelectorAll('.sidebar button').forEach(btn => btn.classList.remove('active'));
+        event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
