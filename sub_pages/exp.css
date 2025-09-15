@@ -12,18 +12,29 @@ body {
     width: 35%;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+
+.foot footer{
+	background-color: #E5E4E6;
 }
+
+
+.foot p{
+    position: fixed;          
+    bottom: 0;
+    left: 50%;                /* center the box */
+    transform: translateX(-50%);
+    width: 90%;              
+    text-align: left;
+	
+	font-weight: 500;
+}
+
 
 .sidebar {
 	width: 25%;
 	color: #f0f0f0;
 	height: 80vh;
-	padding: 10% 0;
+	padding: 13% 0;
 	box-sizing: border-box;
 	align-items: center;
 	position: absolute;
@@ -68,7 +79,7 @@ footer {
 .content {
 	
 	flex: 1;
-	padding: 10% 12% 0 5%;
+	padding: 13% 12% 0 5%;
 	
 }
 
