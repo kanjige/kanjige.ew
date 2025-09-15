@@ -39,6 +39,22 @@
 
 
     
+.foot{
+	background-color: #e5e4e6;
+}
+
+
+.foot p{     
+	
+	margin: auto;
+    width: 90%;              
+    text-align: left;
+	font-weight: 500;
+    background-color: #e5e4e6;
+}
+
+
+    
 
 /* Centerpiece Text */ 
     .kanjige {
