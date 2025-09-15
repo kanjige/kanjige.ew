@@ -12,6 +12,13 @@ body {
     width: 35%;
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
 .sidebar {
 	width: 25%;
 	color: #f0f0f0;
