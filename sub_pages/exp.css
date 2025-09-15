@@ -5,27 +5,29 @@ body {
 	color: #0a0a0a;
 	font-family: Afacad Flux;
 	width: "70%";
-	display:flex;
 }
 
+
+main{
+	display: flex;
+	height: 97vh;
+}
 .filler-block {
     width: 35%;
 }
 
 
-.foot footer{
+.foot{
 	background-color: #E5E4E6;
+	height: 3vh;
 }
 
 
-.foot p{
-    position: fixed;          
-    bottom: 0;
-    left: 50%;                /* center the box */
-    transform: translateX(-50%);
+.foot p{     
+	
+	margin: auto;
     width: 90%;              
     text-align: left;
-	
 	font-weight: 500;
 }
 
